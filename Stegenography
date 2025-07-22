@@ -13,4 +13,25 @@ To extract the txt file from the image
 
 secret .txt will appears in directory 
 	Cat secret.txt
+
+
+=========================================================================
+
+download any pic 
+- sudo mkdir stegno 
+- cd stegno 
+- sudo mv  ~/downloads/cat.jpeg ~/stegno
+-cd stegno 
+-  sudo nano hello.txt
+		type anything what u want to hide in your downloaded pic 
+- sudo steghide embed -cf cat.jpeg -ef hello.txt
+  passphrase =admin 
+our data is hide in our cat.jpeg picture 
+
+===NOW UNHIDE DATA 
+
+sudo mv hello.txt hello_backup.txt
+-sudo steghide extract -cf cat.jpeg 
+ls 
+cat hello.txt
 	
